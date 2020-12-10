@@ -15,8 +15,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface INewsService {
     /**
      * 根据查询id查音乐
-     * @param Id
+     * @param newsId
      * @return Result
      */
-    Result newsById(String Id);
+    Result newsById(String newsId);
 }

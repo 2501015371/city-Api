@@ -15,8 +15,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface IServiceService {
     /**
      * 根据查询id查服务
-     * @param Id
+     * @param serviceId
      * @return Result
      */
-    Result serviceById(String Id);
+    Result serviceById(String serviceId);
 }

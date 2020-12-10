@@ -26,10 +26,10 @@ public class ServiceServiceImpl implements IServiceService {
     private ServiceMapper serviceMapper;
 
     @Override
-    public Result serviceById(String Id) {
+    public Result serviceById(String serviceId) {
         com.example.city.entity.Service service = null;
         try{
-            service =  serviceMapper.serviceById(Id);
+            service =  serviceMapper.serviceById(serviceId);
         } catch (SQLException e) {
             e.printStackTrace();
         }

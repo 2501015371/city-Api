@@ -29,10 +29,10 @@ public class NewsServiceImpl implements INewsService {
 
 
     @Override
-    public Result newsById(String Id) {
+    public Result newsById(String newsId) {
         News news = null;
         try{
-            news = newsMapper.newsById(Id);
+            news = newsMapper.newsById(newsId);
         } catch (SQLException e) {
             e.printStackTrace();
         }

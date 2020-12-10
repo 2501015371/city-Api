@@ -28,7 +28,7 @@ public class ServiceController {
     private IServiceService serviceService;
 
     @GetMapping("/{serviceId}")
-    public Result getService(@PathVariable() String Id){
-        return serviceService.serviceById(Id);
+    public Result getService(@PathVariable String serviceId){
+        return serviceService.serviceById(serviceId);
     }
 }

@@ -18,10 +18,10 @@ import java.sql.SQLException;
 public interface ServiceMapper {
     /**
      * 根据id查询用户
-     * @param Id
+     * @param serviceId
      * @throws SQLException
      * @return Music
      */
-    @Select("SELECT * FROM service WHERE id=#{Id} ")
-    Service serviceById(String Id) throws SQLException;
+    @Select("SELECT * FROM service WHERE id=#{serviceId} ")
+    Service serviceById(String serviceId) throws SQLException;
 }

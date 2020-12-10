@@ -19,10 +19,10 @@ public interface NewsMapper {
 
     /**
      * 根据id查询用户
-     * @param Id
+     * @param newsId
      * @throws SQLException
      * @return Music
      */
-    @Select("SELECT * FROM news WHERE id=#{Id} ")
-    News newsById(String Id) throws SQLException;
+    @Select("SELECT * FROM news WHERE id=#{newsId} ")
+    News newsById(String newsId) throws SQLException;
 }

@@ -35,7 +35,7 @@ public class UserController {
     }
 
     @GetMapping("/{newsId}")
-    public Result getNews(@PathVariable() String Id){
-        return newsService.newsById(Id);
+    public Result getNews(@PathVariable String newsId){
+        return newsService.newsById(newsId);
     }
 }
